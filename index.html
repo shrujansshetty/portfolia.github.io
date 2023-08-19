@@ -16,9 +16,10 @@ body{
   background-repeat:no-repeat ;
   background-size: cover;
 }
-.splitl {
+
+.split {
   height: 100%;
-  width: 10%;
+  width: 17%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -27,7 +28,31 @@ body{
   color:white;
   text-align:left;
   padding-left: 20px;
-  margin-left: 250px;
+ 
+}
+.cl {
+  left: 0%;
+}
+.cr {
+  right: 0%;
+}
+
+
+
+
+
+.splitl {
+  height: 100%;
+  width: 11%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 250px;
+  color:white;
+  text-align:left;
+  padding-left: 3%;
+  
 }
 .splitr {
   height: 100%;
@@ -36,19 +61,17 @@ body{
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
-  margin-left: 150px;
-  max-width: 1210px;
-  margin-right: 250px;
+  text-align:left;
+  padding-left: 30%;
 }
 
 .left {
-  left: 0;
+  left: 17%;
   background-color: #000000;
 }
 
 .right {
-  right: 0;
+  right: 17%;
   
 }
 .centered img {
@@ -61,12 +84,12 @@ body{
     <title>my profile</title>
 </head>
 <body background="background.jpg" >
-  <div class="split a"></div>
+  <div class="split cl"></div>
   <div class="splitr right">
     <div class="centered">
       <h1 font:algerian><center><u>MY PROFILE</u></center></h1>
      <img  src="photo.jpg" alt="Image" class="img">
-  
+  <br>
     <u><h3>Basic Details</h3></u>
     Name : Shrujan S Shetty<br>
     Roll no :NNM22CS174<br>
@@ -91,7 +114,7 @@ body{
      Infosys for 7 years
      <h4>Manager</h4>
      Google for 4 years
-    
+    <br><br><br>
     </div></div>
     <div class="splitl left">
       <div class="centered">
@@ -113,5 +136,7 @@ body{
   </ul>
 
 </div></div>
+
+<div class="split cr"></div>
 </body>
 </html> 
